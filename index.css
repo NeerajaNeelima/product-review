@@ -1,0 +1,90 @@
+body{
+    background-color: bisque;
+    
+}
+.container{
+    margin-top: 80px;
+    display: flex;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.left-img{
+    background-image: url('images/image-product-desktop.jpg');
+    background-size: cover;
+     height: 530px;
+     width: 380px;
+     border-radius: 10px 0px 0px 10px;
+
+}
+.right{
+    margin-left: 0px;
+    width: 340px;
+    background-color: white;
+    padding-left: 40px;
+}
+.product-name{
+    color: rgb(62, 61, 61);
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    
+    text-transform: uppercase;
+}
+.heading{
+    font-family: Fraunces;
+    font-size: 47px;
+    max-width: 300px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.description{
+    color: rgb(62, 61, 61);
+    font-family: Montserrat;
+    letter-spacing: 2px;
+    font-size: 15px;
+    max-width: 300px;
+    line-height: 1.5rem;
+}
+.price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.price .left{
+    color:hsl(158, 36%, 37%);
+    font-family: Fraunces;
+    font-size: 37px;
+}
+.price .right{
+    font-family: Montserrat;
+    font-size: 17px;
+    text-decoration: line-through;
+}
+.Buy{
+    display: flex;
+    border-radius: 10px;
+    margin-top: 30px;
+    align-items: center;
+    background-color:hsl(158, 36%, 37%) ;
+    width: 300px;
+}
+.Buy p{
+    color:white;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.Buy img{
+    padding-left: 100px;
+}
+@media only screen and (max-width: 700px) {
+    .left-img{
+        background-image: url('images/image-product-mobile.jpg');
+        background-size: cover;
+        height: 300px;
+        border-radius: 10px 10px 0 0;
+    }
+    .Buy{
+        margin-bottom: 10px;
+    }
+}
